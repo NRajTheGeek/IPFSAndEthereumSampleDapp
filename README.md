@@ -145,13 +145,9 @@ Sample upload call json body:
 
 
 ```
-## 5. How Quorum Is Maintaining the Privacy
+## 5. 
 
-Image below is from the official quorum repo:-
-
-![from the official quorum repo](https://raw.githubusercontent.com/jpmorganchase/quorum-docs/master/images/QuorumTransactionProcessing.JPG)
-
-## 6. Steps to start the Quorum Blockchain
+## 6. 
 
 
 
