@@ -1,0 +1,102 @@
+{
+  "cluster": {
+    "id": "Qmf87bH73SD3uGfhHvjbf8pGJ1mufSJczLSWrUbtgMYMyq",
+    "peername": "5d9411fe6d65",
+    "private_key": "CAASqAkwggSkAgEAAoIBAQC5xHuVFSjmSUu81VYMWqH+OQRtjvOIxp1eg7K1Be/6uqNGhDF+HzX0DtdtW4Y3Trdk0hLAZbLFhpCxwJ+ceIGYgKCCrWE5bKZInzP/Q/v5bni8M34fCuSEj/4PDagOs1Qq66ZYKRMHLk8WuLUR3GQ6ASA86r9IYvLi/dDGpR2nnw/+mhDSuN+TCFkS0bvirr6aYPIXAmmwz4gqfDXI5IiugQ7an0E6KqYzfhYwmHXeoS4TCVBYUutGSxNpMB6IC5FUj6OrQHc36QmHtyY9OL5GpNuDl15xmebhm8MZ4KN9K6KvdueKZc86i+zK8Th8puIx7ou0DjF7wNUSbWhJdw19AgMBAAECggEBALbb+QZMOOFOXvY3TaeFg5YajAhIQeNuFrRVkRDuEkbNdzFPqORMVrCx907XW+uPWaktvHWU5f/XsRC32qWMXY0/eECJ6H09PQWZaPap9huWqdQgH9LwxvbSQrSQrdAiqARDyI9Zhzh3VjS4hsxZFHOgbhpovPfFJu9YBy2ylNlMZBQ1gYSl1shXzMsWsbl1NE6P90YCIQ2iY3t31yYSxXSvvGTCPYZuvg+0GkHtCjCMNwcR9lbMYvCJkrL5xk0/XHLHB9IIHFd0rcMnzQezZzj1HW/66vot+qcCKtO3c7EGMGXSG4v0EKla9XbpjnVMrN+psmF7aHeCvoVt/yC3+yECgYEA7IlXXEhLgyTkOJ3JD/5o4JoyQMEtfOW2k2w3gOajA1He+Wya/ZnlPvpJUjDrSyvBy+E9lBXV9xXcJLg1WAvI3KnDOEshNyoNiVoUPI73aMsrNE76NznFHYHZA+9+TdEFyI9UsqaVFJA8fzr/tIY4uES40PLIXGMWFkRnTmn+QSUCgYEAyQ2wbiRng5a/H+r8dCj6BY7McRy21Dr8gbfcu/i4jGhi85L3k4qSQGxonJ//yWKmx/0VsfqQP7TfsvZHxoJVW6dBwplLOsUiTXGqvNMnpLJHwADOXUxDpGW4y3vSHtglIdIvmyxJSL2/owQYjupt+wUPqEYY3BS2tKk8SUSFR3kCgYABpVL+SWJ9HxyXaEGl4tdH+MqwuKdgXxjOHcqlEvW/aCptAdxyN0fpEETCVaTNeRh4GrEa/qvmdDh76Ow2GJ7lKik5kwxAHgLKGd5aLYR7Li62xnXnPHeqpOSlqlzuna20n4qvU4lmAzroh7iPwP9UCOZgTdAnFGlq7j7pxMMIIQKBgQCWzAivo+hr/y4c/4AYk/9rGb7ne/T5W8C2frQ13Ih273iAXpQI+p9VaLpR94O/hZm4WG/kTR3SWpSKQ0R0dJ8XHm0pSxbs3p0q3v2DoRCT7A/6x+AAhEobzRv8q0NfVRkMs/x285GH2KIa3+CXmOeiphonSWQt9e9Ps7t+7MDWaQKBgA76b9xWLCq3y8MmEDH+e/XzC/JVMM5PLhktR0agqyoBtgLsDAf2Sc62BUcZrVcDsFrOquR+Zh0IQamRjE5+Sz7gtDNJ1qetNDMpdMmja/Ng/74g9JFl0erqJEwD16FceuyuJfhpKf2xsfQpVHFDYc/V0mo7p8+X+H/lW6s6kJby",
+    "secret": "",
+    "leave_on_shutdown": false,
+    "listen_multiaddress": "/ip4/0.0.0.0/tcp/9096",
+    "state_sync_interval": "10m0s",
+    "ipfs_sync_interval": "2m10s",
+    "replication_factor_min": -1,
+    "replication_factor_max": -1,
+    "monitor_ping_interval": "15s",
+    "peer_watch_interval": "5s",
+    "disable_repinning": false
+  },
+  "consensus": {
+    "raft": {
+      "init_peerset": [],
+      "wait_for_leader_timeout": "15s",
+      "network_timeout": "10s",
+      "commit_retries": 1,
+      "commit_retry_delay": "200ms",
+      "backups_rotate": 6,
+      "heartbeat_timeout": "1s",
+      "election_timeout": "1s",
+      "commit_timeout": "50ms",
+      "max_append_entries": 64,
+      "trailing_logs": 10240,
+      "snapshot_interval": "2m0s",
+      "snapshot_threshold": 8192,
+      "leader_lease_timeout": "500ms"
+    }
+  },
+  "api": {
+    "ipfsproxy": {
+      "node_multiaddress": "/dns4/ipfs0/tcp/5001",
+      "listen_multiaddress": "/ip4/0.0.0.0/tcp/9095",
+      "read_timeout": "0s",
+      "read_header_timeout": "5s",
+      "write_timeout": "0s",
+      "idle_timeout": "1m0s"
+    },
+    "restapi": {
+      "http_listen_multiaddress": "/ip4/0.0.0.0/tcp/9094",
+      "read_timeout": "0s",
+      "read_header_timeout": "5s",
+      "write_timeout": "0s",
+      "idle_timeout": "2m0s",
+      "basic_auth_credentials": null,
+      "headers": {
+        "Access-Control-Allow-Headers": [
+          "X-Requested-With",
+          "Range"
+        ],
+        "Access-Control-Allow-Methods": [
+          "GET"
+        ],
+        "Access-Control-Allow-Origin": [
+          "*"
+        ]
+      }
+    }
+  },
+  "ipfs_connector": {
+    "ipfshttp": {
+      "node_multiaddress": "/dns4/ipfs0/tcp/5001",
+      "connect_swarms_delay": "30s",
+      "pin_method": "refs",
+      "ipfs_request_timeout": "5m0s",
+      "pin_timeout": "24h0m0s",
+      "unpin_timeout": "3h0m0s"
+    }
+  },
+  "pin_tracker": {
+    "maptracker": {
+      "max_pin_queue_size": 50000,
+      "concurrent_pins": 10
+    },
+    "stateless": {
+      "max_pin_queue_size": 50000,
+      "concurrent_pins": 10
+    }
+  },
+  "monitor": {
+    "monbasic": {
+      "check_interval": "15s"
+    },
+    "pubsubmon": {
+      "check_interval": "15s"
+    }
+  },
+  "informer": {
+    "disk": {
+      "metric_ttl": "30s",
+      "metric_type": "freespace"
+    },
+    "numpin": {
+      "metric_ttl": "10s"
+    }
+  }
+}
