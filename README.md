@@ -4,6 +4,7 @@
   * Docker version 18.09.0+
   * docker-compose version 1.23.0+ 
   * Node.js v8.5+
+  * ganache-cli [Ganache CLI v6.3.0 (ganache-core: 2.4.0)]
   * Truffle v4.1.10+
   * IDE of Your choice (preferred is VsCode)
 
