@@ -1,0 +1,318 @@
+swagger: '2.0'
+info:
+  version: 1.0.2
+  title: Quorum Dapp Sample
+  description: Just a simple Dapp
+  contact:
+    name: Dapp
+    url: 'http://localhost:3000'
+host: 'localhost:3000'
+basePath: /
+schemes:
+  - http
+
+paths:
+  /nodeA/getAllItems:
+    get:
+      tags:
+        - NodeA Controller
+      summary: This api is used to fetch list of all items
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /nodeA/createItem/itemName/{name}/itemPrice/{price}/node/{whichNode}:
+    post:
+      tags:
+        - NodeA Controller
+      summary: This api is used for creating an item resource with a base price for a perticular node
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+        - name: price
+          in: path
+          type: number
+          required: true
+        - name: whichNode
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'  
+  /nodeA/getBid/item/{itemName}/bidderAddress/{bidderAddress}/node/{whichNode}:
+    get:
+      tags:
+        - NodeA Controller
+      summary: This api is used to fetch bid placed against the base price of an item by a bidder on a node
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+        - name: bidderAddress
+          in: path
+          type: string
+          required: true
+        - name: whichNode
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse' 
+
+  /nodeA/getItemPrice/{itemName}/node/{whichNode}:
+    get:
+      tags:
+        - NodeA Controller
+      summary: This api is used to fetch item price by item name for a node
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+        - name: whichNode
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /nodeB/getAllItems:
+    get:
+      tags:
+        - NodeB Controller
+      summary: This api is used to fetch list of all items
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  
+  /nodeB/getItemPrice/{itemName}:
+    get:
+      tags:
+        - NodeB Controller
+      summary: This api is used to fetch item price by item name
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /nodeB/placeBid/item/{itemName}/price/{bidPrice}/bidderAddress/{bidderAddress}:
+    post:
+      tags:
+        - NodeB Controller
+      summary: This api is used to place a bid against an existing item
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+        - name: bidPrice
+          in: path
+          type: number
+          required: true
+        - name: bidderAddress
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /nodeB/getBid/item/{itemName}/bidderAddress/{bidderAddress}:
+    get:
+      tags:
+        - NodeB Controller
+      summary: This api is used to fetch the bid placed agains an item by a bidder on nodeB
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+        - name: bidderAddress
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /nodeC/getAllItems:
+    get:
+      tags:
+        - NodeC Controller
+      summary: This api is used to fetch list of all items
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /nodeC/getItemPrice/{itemName}:
+    get:
+      tags:
+        - NodeC Controller
+      summary: This api is used to fetch item price by item name
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /nodeC/placeBid/item/{itemName}/price/{bidPrice}/bidderAddress/{bidderAddress}:
+    post:
+      tags:
+        - NodeC Controller
+      summary: This api is used to place a bid against an existing item
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+        - name: bidPrice
+          in: path
+          type: number
+          required: true
+        - name: bidderAddress
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /nodeC/getBid/item/{itemName}/bidderAddress/{bidderAddress}:
+    get:
+      tags:
+        - NodeC Controller
+      summary: This api is used to fetch the bid placed agains an item by a bidder on nodeC
+      produces:
+        - applicaton/json
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - name: itemName
+          in: path
+          type: string
+          required: true
+        - name: bidderAddress
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'

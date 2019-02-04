@@ -1,0 +1,29 @@
+{
+  "name": "quorumSampleApp",
+  "version": "0.0.2",
+  "description": "Frontend example using truffle v3",
+  "scripts": {
+    "build": "npm install",
+    "start": "nodemon ./app/app.js"
+  },
+  "author": "Neeraj Kumar Rajput",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "ipfs-http-client": "^29.1.0",
+    "jade": "~1.11.0",
+    "js-sha256": "^0.9.0",
+    "morgan": "~1.9.0",
+    "node-rsa": "^1.0.3",
+    "swagger-jsdoc": "^1.3.0",
+    "swagger-ui-express": "^4.0.2",
+    "truffle": "^4.1.13",
+    "truffle-contract": "^3.0.6",
+    "web3": "^0.20.7"
+  }
+}

@@ -1,0 +1,90 @@
+{
+    "cf5916888e34182c4317875a864de022f27aecbe98585ebe3bc85f63f671de3b": {
+        "owner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+        "publishDetail": [
+            {
+                "QmSM89FVveuLbmqguw9awPf937tNn8BavQSHNiR37D2E16": {
+                    "publishedBy": "0x20d47a3b88895673e1c557209229d003b926a8d0",
+                    "certOwner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "publicationDate": "2019-02-03T17:08:14.895Z",
+                    "publicationDescription": "this is a digital pub"
+                }
+            }
+        ],
+        "shareDetail": [
+            {
+                "QmSajLjJ7PsbrnSHrpxx7vWL8k28RbxSwcnXBagutzWJTY": {
+                    "sharedBy": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "sharedWith": "",
+                    "sharingDescription": ""
+                }
+            }
+        ]
+    },
+    "f8dff73ea0f58ea3602767378e2ac870171adc39b582a4da7cfdbe2049444b53": {
+        "owner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+        "publishDetail": [
+            {
+                "QmWFDa6pkpY2fasWkTZfhUQKnMY6ju7JkixUZiXbPHNy1K": {
+                    "publishedBy": "0x20d47a3b88895673e1c557209229d003b926a8d0",
+                    "certOwner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "publicationDate": "2019-02-03T17:50:26.299Z",
+                    "publicationDescription": "this is a digital pub"
+                }
+            }
+        ],
+        "shareDetail": [
+            {
+                "QmeHm9FWvrEvda1jRoesPbG2jRE9NqJj3oxvzxefcovMkt": {
+                    "sharedBy": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "sharedWith": "",
+                    "sharingDescription": ""
+                }
+            }
+        ]
+    },
+    "c57f487c48da444940bcc36044c0c8b12bb03c0dce641c6178bb4f2556ca73c0": {
+        "owner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+        "publishDetail": [
+            {
+                "QmRDgKHqK7jXun2jFB5mKCytXsr7kLQzr6rPHBdcK5vLw6": {
+                    "publishedBy": "0x20d47a3b88895673e1c557209229d003b926a8d0",
+                    "certOwner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "publicationDate": "2019-02-03T19:03:55.693Z",
+                    "publicationDescription": "this is a digital pub"
+                }
+            }
+        ],
+        "shareDetail": [
+            {
+                "QmeRMN4pATXBpEBxRc43xUTwVT8FxMmwmmjiMtPJtfb7FY": {
+                    "sharedBy": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "sharedWith": "",
+                    "sharingDescription": ""
+                }
+            }
+        ]
+    },
+    "d1fe35029b1a198cdb35c0231cee3278cc0fdda9f224a593ff1ec59dd2a20290": {
+        "owner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+        "publishDetail": [
+            {
+                "QmPwiXkQDXdYEMhKkwVcVkRNeaiQrHYUUCriWjr4Nxo4rz": {
+                    "publishedBy": "0x20d47a3b88895673e1c557209229d003b926a8d0",
+                    "certOwner": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "publicationDate": "2019-02-03T19:12:16.773Z",
+                    "publicationDescription": "this is a digital pub"
+                }
+            }
+        ],
+        "shareDetail": [
+            {
+                "QmYo2FjYiQGUwArfUQTTGHJQxcWTQCJxTzdNLNLF9vPa4N": {
+                    "sharedBy": "0x7c9dd2097ac4ff1681151554d7c2c582a6b3cf41",
+                    "sharedWith": "",
+                    "sharingDescription": ""
+                }
+            }
+        ]
+    }
+}
